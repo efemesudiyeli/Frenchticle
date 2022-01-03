@@ -1,0 +1,34 @@
+<link href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;700&display=swap" rel="stylesheet">
+
+<ion-header [translucent]="true">
+
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+      <h1 slot="end">| FRENCHTICLE</h1>
+    </ion-toolbar>
+
+</ion-header>
+
+<ion-content [fullscreen]="true" class="background">
+
+  <ion-item id="header">
+    <ion-label>Enter your new babies information!</ion-label>
+  </ion-item>
+  
+  
+    <div class="form">
+      <ion-input placeholder="What was that word?" type="text" [(ngModel)]="word" ></ion-input>
+      <ion-input placeholder="Meaning?" type="text" [(ngModel)]="meaning" ></ion-input>
+      <ion-input placeholder="And which article?" type="text" [(ngModel)]="article"></ion-input>
+      <ion-button expand="block" color="dark" (click)="yeniKayit()" [disabled]="!word || !meaning || !article" >Okay!</ion-button>
+    </div>
+
+
+  
+
+
+
+  
+</ion-content>

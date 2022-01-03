@@ -1,0 +1,34 @@
+<link href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;700&display=swap" rel="stylesheet">
+
+<ion-header [translucent]="true">
+  
+    
+     
+        <ion-back-button></ion-back-button>
+      
+   
+  
+</ion-header>
+
+<ion-content [fullscreen]="true" class="background">
+
+
+  <div id="container">
+    <h1>REGISTER</h1>
+    <p>Enter your information!</p>
+    <div class="form">
+      
+      <ion-input placeholder="First Name" type="text" [(ngModel)]="ad" ></ion-input>
+      <ion-input placeholder="Last Name" type="text" [(ngModel)]="soyad" ></ion-input>
+      <ion-input placeholder="Email" type="email" [(ngModel)]="eposta"></ion-input>
+      <ion-input placeholder="Password" type="password" [(ngModel)]="parola"></ion-input>
+      <ion-input placeholder="Password Again" type="password" [(ngModel)]="parola2" ></ion-input>
+      <ion-button expand="block" fill="outline"  (click)="kayitOl()" >Signup</ion-button>
+  
+    </div>
+  </div>
+
+  
+  
+</ion-content>
+

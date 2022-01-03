@@ -1,0 +1,7 @@
+{
+  "name": "FrenchticleP",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
